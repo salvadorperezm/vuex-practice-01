@@ -28,12 +28,11 @@
 import { mapActions, mapGetters } from 'vuex';
 
 export default {
-  inject: ['cart'],
   methods: {
     ...mapActions(['login', 'logout'])
   },
   computed: {
-    ...mapGetters(['isLoggedIn'])
+    ...mapGetters(['isLoggedIn', 'cart'])
   }
 };
 </script>
